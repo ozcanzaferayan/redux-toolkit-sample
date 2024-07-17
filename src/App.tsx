@@ -1,4 +1,4 @@
-import { useGetPeopleByNumberQuery } from "./apis/peopleApi";
+import { useGetPeopleByNumberQuery } from "./apis/api";
 
 const App = () => {
   const { data: people } = useGetPeopleByNumberQuery(5);

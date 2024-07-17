@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-export const peopleApi = createApi({
-  reducerPath: "peopleApi",
+export const api = createApi({
+  reducerPath: "api",
   baseQuery: fetchBaseQuery({ baseUrl: "https://randomuser.me/api" }),
   endpoints: (builder) => ({
     getPeopleByNumber: builder.query({
@@ -10,4 +10,4 @@ export const peopleApi = createApi({
   }),
 });
 
-export const { useGetPeopleByNumberQuery } = peopleApi;
+export const { useGetPeopleByNumberQuery } = api;
